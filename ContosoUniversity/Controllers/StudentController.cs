@@ -19,6 +19,11 @@ namespace ContosoUniversity.Controllers
         public ActionResult Index()
         {
             return View(db.Students.ToList());
+            
+        }
+        public ActionResult Display()
+        {
+            return View(db.Students.ToList());
         }
 
         // GET: Student/Details/5

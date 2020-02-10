@@ -6,21 +6,25 @@
     <title>@ViewBag.Title - Contoso University</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-<style> 
-    body {
-        padding-top:0px;
-    }
-    .navbar a:link{
-        color: white; 
-        text-decoration: none;
-    }
-    .navbar a:visited{
-        color: silver;
-    }
-    .navbar a:hover{
-        color: lemonchiffon;
-    }
-</style>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <style>
+        body {
+            padding-top: 0px;
+        }
+
+        .navbar a:link {
+            color: white;
+            text-decoration: none;
+        }
+
+        .navbar a:visited {
+            color: silver;
+        }
+
+        .navbar a:hover {
+            color: lemonchiffon;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -49,6 +53,10 @@
                     <li class="nav-item nav-link">
                         @Html.ActionLink("Enrollment", "Index", "Enrollment")
                     </li>
+                </ul>
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item nav-link"><a href="#"><i class="fas fa-registered"></i>Register</a></li>
+                    <li class="nav-item nav-link"><a href="#"><i class="fas fa-sign-in-alt"></i>Login</a></li>
                 </ul>
             </div>
         </nav>
