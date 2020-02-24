@@ -21,7 +21,7 @@ namespace ContosoUniversity.Models
         [Display(Name ="Course ID")]
         public int CourseID { get; set; }
         [Index]
-        [Display(Name ="Studentd")]
+        [Display(Name ="Student")]
         public int StudentID { get; set; }
         public Grade?  Grade { get; set; }
         public virtual Course Course { get; set; }
